@@ -1,0 +1,174 @@
+/* 🩸 Blood Drip Font Effects - Simulando Charu Chandan Blood Drip */
+
+.blood-drip-text {
+  font-family: 'Creepster', 'Butcherman', cursive;
+  position: relative;
+  color: #8B0000; /* Dark red */
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(139, 0, 0, 0.5),
+    0 0 20px rgba(139, 0, 0, 0.3);
+  filter: drop-shadow(0 0 5px rgba(139, 0, 0, 0.8));
+}
+
+/* Efecto de goteo de sangre */
+.blood-drip-text::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+  width: 4px;
+  height: 15px;
+  background: linear-gradient(to bottom, #8B0000, #590000);
+  border-radius: 0 0 50% 50%;
+  animation: drip 3s ease-in-out infinite;
+}
+
+.blood-drip-text::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 30%;
+  width: 3px;
+  height: 12px;
+  background: linear-gradient(to bottom, #8B0000, #590000);
+  border-radius: 0 0 50% 50%;
+  animation: drip 3s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* Animación de goteo */
+@keyframes drip {
+  0%, 90%, 100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  10%, 80% {
+    transform: scaleY(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scaleY(1.5);
+    opacity: 0.6;
+  }
+}
+
+/* Variantes de tamaño */
+.blood-drip-xl {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.blood-drip-lg {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.blood-drip-md {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.blood-drip-sm {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Efecto hover más intenso */
+.blood-drip-text:hover {
+  color: #FF0000;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.9),
+    0 0 15px rgba(255, 0, 0, 0.7),
+    0 0 30px rgba(255, 0, 0, 0.5);
+  filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.9));
+  transition: all 0.3s ease-in-out;
+}
+
+/* Variante para texto Halloween */
+.halloween-title {
+  font-family: 'Nosifer', 'Creepster', cursive;
+  color: #FF6600; /* Orange */
+  text-shadow: 
+    3px 3px 6px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(255, 102, 0, 0.6);
+  filter: drop-shadow(0 0 8px rgba(255, 102, 0, 0.8));
+}
+
+/* Texto con efecto de sangre salpicada */
+.blood-splatter-text {
+  font-family: 'Eater', cursive;
+  color: #8B0000;
+  position: relative;
+}
+
+.blood-splatter-text::after {
+  content: '💧';
+  position: absolute;
+  top: -5px;
+  right: 10%;
+  color: #8B0000;
+  font-size: 0.8em;
+  animation: splatter 4s ease-in-out infinite;
+}
+
+@keyframes splatter {
+  0%, 95%, 100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  5%, 90% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utilidades para combinaciones */
+.horror-combo {
+  font-family: 'Butcherman', cursive;
+  background: linear-gradient(45deg, #8B0000, #FF0000, #8B0000);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: bloodGradient 3s ease-in-out infinite;
+}
+
+@keyframes bloodGradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Animación flotante para elementos decorativos */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Efecto de escala para elementos hover */
+.scale-up-center {
+  animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

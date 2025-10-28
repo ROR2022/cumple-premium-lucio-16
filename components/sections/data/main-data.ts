@@ -27,7 +27,8 @@ export const quinceMainData = {
       father: "Andres Martínez",
       mother: "Maria de Jesús Sanchez",
       message: `¡Estás invitado a una noche de miedo y diversión! 👻
-Acompaña a Lucio a celebrar sus 16 años con una fiesta de Halloween llena de sustos, música y mucha diversión. 🍬🕸️
+Acompañame a celebrar mis 16 años con una fiesta de Halloween llena de sustos, 
+música y mucha diversión. 🍬🕸️
 Ven con tu mejor disfraz (opcional) y prepárate para pasarla de miedo 😈`,
       backgroundImage: "/images/fondoHalloween1.jpeg",
     },

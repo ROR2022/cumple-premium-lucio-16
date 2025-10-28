@@ -12,6 +12,16 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			'script': ['var(--font-script)', 'serif'],
+  			'body': ['var(--font-body)', 'sans-serif'],
+  			'halloween': ['var(--font-halloween)', 'cursive'],
+  			'blood-drip': ['var(--font-halloween)', 'Creepster', 'cursive'],
+  			'butcherman': ['Butcherman', 'cursive'],
+  			'nosifer': ['Nosifer', 'cursive'],
+  			'eater': ['Eater', 'cursive'],
+  			'main-text': ['var(--font-body)', 'sans-serif'], // Agregamos esta que veo que usas
+  		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
